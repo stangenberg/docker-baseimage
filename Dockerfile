@@ -1,8 +1,10 @@
-FROM gliderlabs/alpine:3.2
-MAINTAINER hello@neilellis.me
+FROM gliderlabs/alpine:3.3
+
+MAINTAINER Thorben Stangenberg <thorben@stangenberg.net>
 
 COPY rootfs /
-ADD https://github.com/just-containers/s6-overlay/releases/download/v1.13.0.0/s6-overlay-amd64.tar.gz /tmp/s6-overlay.tar.gz
+
+COPY s6-overlay-v1.13.0.0-amd64.tar.gz /tmp/s6-overlay.tar.gz
 
 # about nsswitch.conf - see https://registry.hub.docker.com/u/frolvlad/alpine-oraclejdk8/dockerfile/
 
@@ -15,4 +17,5 @@ RUN tar xvfz /tmp/s6-overlay.tar.gz -C / && \
   adduser -D  -G app -s /bin/false -u 999 app
 
 ENTRYPOINT ["/init"]
+
 CMD []
