@@ -1,7 +1,7 @@
 # base-alpine
 Base-alpine provides an image suitable for running Alpine Linux in Tutum/Kubernetes style hosted distributed environments. It comes with S6 process manager by default, if you don't use a process manager things can get a bit messy.
 
-[![Docker Stars](https://img.shields.io/docker/stars/stangenberg/baseimage.svg)][dockerhub] [![Docker Pulls](https://img.shields.io/docker/pulls/stangenberg/baseimage.svg)][dockerhub] [![Image Size](https://img.shields.io/imagelayers/image-size/stangenberg/baseimage.svg)](https://imagelayers.io/?images=stangenberg/baseimage) [![Image Layers](https://img.shields.io/imagelayers/layers/stangenberg/baseimage.svg)](https://imagelayers.io/?images=stangenberg/baseimage)
+[![Docker Stars](https://img.shields.io/docker/stars/stangenberg/baseimage.svg)][dockerhub] [![Docker Pulls](https://img.shields.io/docker/pulls/stangenberg/baseimage.svg)][dockerhub] [![Image Size](https://img.shields.io/imagelayers/image-size/stangenberg/baseimage/latest.svg)](https://imagelayers.io/?images=stangenberg/baseimage:latest) [![Image Layers](https://img.shields.io/imagelayers/layers/stangenberg/baseimage/latest.svg)](https://imagelayers.io/?images=stangenberg/baseimage:latest)
 
 --------------------------------------------------------------------------------
 
