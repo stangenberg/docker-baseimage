@@ -27,7 +27,7 @@ run: clean
 	docker run --name="$(CONTAINER_NAME)" $(DOCKER_USER)/$(DOCKER_IMAGE):$(DOCKER_TAG)
 
 # run to sh
-sh: clean
+bash: clean
 	docker run -ti --name="$(CONTAINER_NAME)" $(DOCKER_USER)/$(DOCKER_IMAGE):$(DOCKER_TAG) /bin/ash
 
 # Removes existing containers.
